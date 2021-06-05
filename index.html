@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <script src="./static/js/app.js"></script>
+    <img
+      class="logo"
+      src="./static/images/rickandmorty.png"
+      width="280"
+      alt="logo rick and morty"
+    />
+    <div id="character-container"></div>
+    <aside class="navigation">
+      <span>About</span>
+      <span>Name</span>
+      <span class="asset">
+        <span class="line"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </span>
+    </aside>
+    <div class="wrapper">
+      <article class="character">
+        <div class="character-grid">
+          <img
+            class="character-image"
+            src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+            alt=""
+          />
+          <div class="character-name">
+            <h2>Rick Sanchez</h2>
+          </div>
+          <div class="character-labels">
+            <h3 class="character-label">Género: Male</h3>
+            <h3 class="character-label">Especie: Human</h3>
+            <h3 class="character-label">Status: Alive</h3>
+          </div>
+        </div>
+      </article>
+    </div>
+    <script type="module" src="./static/js/app.js"></script>
   </body>
 </html>
