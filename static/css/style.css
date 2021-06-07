@@ -14,7 +14,8 @@ body {
   height: 100vh;
   padding: 4em;
   grid-template-columns: 50px 1fr 1fr 200px;
-  grid-template-rows: 312px 1fr 1fr 1fr;
+  grid-template-rows: 312px 100px 1fr 1fr;
+  grid-column-gap: 4em;
   grid-template-areas: "asset-top logo logo social" "name character avatar avatar" "about character-description avatar avatar" "asset-bottom learn-more arrow other-line";
 }
 
@@ -37,13 +38,21 @@ body {
   transform: rotate(180deg);
   display: flex;
   align-items: center;
+  border: 1px solid purple;
+  justify-content: center;
 }
 .navigation-name a {
   text-decoration: none;
   font-size: 25px;
+  color: black;
   text-transform: uppercase;
 }
-
+.character-name-container {
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  padding-inline-start: 1em;
+}
 /* ------------- */
 .navigation {
   /* transform-origin: left bottom; */
